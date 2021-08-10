@@ -62,14 +62,14 @@ body{
     transition: background 0.2s;
     cursor:pointer;
 }
-
+/* Estilos del main */
 .main_content{
-    overflow: hidden;
-    margin-top: 3em;
-    width: 100%;
+    margin-right: 350px;
     height: 100vh;
     background-color: #e4e4e4;
+    overflow: hidden;
 }
+/* estilos de la presentación personal */
 .main_content--presentation{
     width: 650px;
     padding: 1em;
@@ -78,18 +78,24 @@ body{
     border-radius: 1em;
     text-align:justify
 }
+
 .main_content--tittle{
-     margin-left: 1em;
-     padding: 1em;
+    margin-left: 1em;
+    padding: 1em;
 }
 .contact{
     position:fixed;
     right: 0;
     top: 3.2em;
-    width: 400px;
+    width: 350px;
     height: 100vh;
     background-color: #f3f3f3;
-
+}
+.contact--hidden{
+    transform:translateX(350px);
+}
+.main_content--full{
+    margin-right: 0;
 }
 
 

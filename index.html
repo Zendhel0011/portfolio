@@ -17,12 +17,12 @@
                 <ul class="nav_list">
                     <li class="nav_list--item"><a href="#" class="nav_list--link">Projects</a></li>
                     <li class="nav_list--item"><a href="#" class="nav_list--link">About</a></li>
-                    <li class="nav_list--item"><a href="#" class="nav_list--link">Contact</a></li>
+                    <li class="nav_list--item"><a href="#" class="nav_list--link" id="navContact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <aside class="contact">
+    <aside class="contact contact--hidden" id="sectionContact">
         <form action="">
             <table>
                 <thead>
@@ -31,16 +31,19 @@
                 <tbody>
                     <tr>
                         <td>
-                            <input type="email" placeholder="Email" name="email">
+                            <label for="email"> Enter your email:</label><br>
+                            <input type="email" placeholder="Email" name="email" id="email">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text" placeholder="Subject" name="subject">
+                            <label for="subject">Subject:</label><br>
+                            <input type="text" placeholder="Subject" id="subject" name="subject">
                         </td>
                     </tr>
                     <tr>
                         <td>
+                            <label for="message"> Message:</label><br>
                             <textarea name="info" id="" cols="30" rows="10"></textarea>
                         </td>
                     </tr>
@@ -54,7 +57,7 @@
             </table>
         </form>
     </aside>
-    <main class="main_content">
+    <main class="main_content" id="mainContent">
         <h1 class="main_content--tittle">Greetings:</h1>
         <div class="main_content--presentation">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis
             sapiente ea consequuntur quibusdam, nesciunt praesentium iusto deserunt eligendi, magni adipisci nulla quos
@@ -64,7 +67,7 @@
             harum.
         </div>
     </main>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
